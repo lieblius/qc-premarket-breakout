@@ -7,7 +7,7 @@ class PremarketBreakout(QCAlgorithm):
     premarket_high = {}
     
     def Initialize(self):
-        self.gapper_data = pd.read_csv(StringIO(self.Download("https://raw.githubusercontent.com/lieblius/financial_data/main/gappers.csv")), index_col='Date')
+        self.gapper_data = pd.read_csv(StringIO(self.Download("https://raw.githubusercontent.com/lieblius/financial-data/main/gappers.csv")), index_col='Date')
         
         self.SetStartDate(2018, 1, 1)  
         self.SetEndDate(2019, 1, 10)  
